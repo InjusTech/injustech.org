@@ -1,6 +1,6 @@
 h1 {
     color: #0E0E52;
-    font-size: 54px;
+    font-size: 64px;
     text-align: left;
     font-weight: 600;
     font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
@@ -10,7 +10,7 @@ h1 {
   }
 
   h2 {
-    color: #150578;
+    color: #000000;
     font-size: 42px;
     text-align: left;
     font-weight: 300;
@@ -31,7 +31,7 @@ h1 {
   }
 
   #first-strip-text {
-    color: #150578;
+    color: #000000;
     font-size: 30px;
     font-weight: 300;
     padding-left: 10%;
@@ -43,4 +43,31 @@ h1 {
     height: 350px;
     padding-left: 5%;
     padding-right: 12%;
+  }
+
+  h3 {
+    font-size: 42px;
+    color: #0E0E52;
+    padding-left: 10%;
+    padding-top: 2%;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  }
+
+  .flex-class {
+    display:flex; 
+    flex-direction:row;
+    padding-bottom: 0%;
+  }
+
+  #team-style {
+    font-size: 28px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2%;
+    font-weight: 300;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  }
+
+  #website-img {
+    padding-left: 5%;
   }
