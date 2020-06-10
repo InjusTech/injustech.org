@@ -10,4 +10,4 @@
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './src/styles/nav.scss';
-import './src/styles/nav2.css';
+import './src/styles/_landing.scss';
