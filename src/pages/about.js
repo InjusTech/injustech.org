@@ -7,10 +7,10 @@ import Carousel from "react-bootstrap/Carousel"
 
 const AboutPage = () => (
   <Layout>
-    <div style={{ paddingBottom: "0%" }}>
+    <div>
       <h1>About Us</h1>
       <div class="flex-class">
-        <h2 style={{ paddingRight: "0%", paddingBottom: "0%" }}>
+        <h2 style={{ paddingRight: "5%", paddingBottom: "0%" }}>
           The InjusTech Project's mission is to redistribute digital
           entrepeneurship, hoping to restore balance to a landscape
           underrepresented by BIPOC creators. With the growing desire to support
@@ -20,19 +20,15 @@ const AboutPage = () => (
         <Image
           width="33%"
           height="350px"
-          style={{ paddingRight: "10%" }}
+          style={{ paddingRight: "10%", paddingBottom: "0%" }}
           src={require("../images/blmlogo.png")}
         />
       </div>
-      <svg
-        style={{ paddingTop: "0%" }}
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1440 320"
-      >
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200">
         <path
           fill="#f1f6fd"
           fill-opacity="1"
-          d="M0,192L80,186.7C160,181,320,171,480,170.7C640,171,800,181,960,165.3C1120,149,1280,107,1360,85.3L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+          d="M0,96L60,112C120,128,240,160,360,170.7C480,181,600,171,720,144C840,117,960,75,1080,74.7C1200,75,1320,117,1380,138.7L1440,160L1440,200L1380,200C1200,200,1200,200,1080,200C960,200,840,200,720,200C600,200,480,200,360,200C240,200,120,200,60,200L0,200Z"
         ></path>
       </svg>
       <div class="first-strip">
@@ -55,7 +51,12 @@ const AboutPage = () => (
           samples of some of the past websites we've developed below!{" "}
         </p>
         <Carousel
-          style={{ width: "80%", paddingLeft: "20%", paddingTop: "2%" }}
+          style={{
+            width: "80%",
+            paddingLeft: "20%",
+            paddingTop: "2%",
+            borderRadius: "15px",
+          }}
         >
           <Carousel.Item>
             <img

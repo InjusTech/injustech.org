@@ -19,6 +19,7 @@ const Header = () => (
           src={require("../images/logo.png")}
           width="125"
           height="40"
+          rounded
           className="d-inline-block align-top"
         />
       </Navbar.Brand>
