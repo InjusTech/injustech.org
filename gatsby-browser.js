@@ -11,3 +11,4 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './src/styles/nav.scss';
 import './src/styles/_landing.scss';
+import './src/styles/_section.scss';
