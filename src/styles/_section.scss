@@ -1,0 +1,13 @@
+$section-divider-height: 60; // px
+$section-divider-width: 1920; // px
+$section-divider-ratio: calc(100% * var($section-divider-height) / var($section-divider-width));
+
+.has-section-divider {
+  position: relative;
+  padding-bottom: var($section-divider-ratio);
+}
+
+.has-section-divider .container {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
