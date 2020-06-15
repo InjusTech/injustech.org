@@ -13,14 +13,19 @@ const icon = (
 
 const Header = () => (
   <div className="container">
-    <Navbar fixed="top" bg="white" expand="lg">
+    <Navbar
+      className="justify-content-between"
+      fixed="top"
+      bg="white"
+      expand="lg"
+    >
       <Navbar.Brand href="/">
         <Image
           src={require("../images/logo.png")}
           width="125"
           height="40"
           rounded
-          className="d-inline-block align-top"
+          className="navbar-right"
         />
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
