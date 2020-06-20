@@ -5,6 +5,8 @@ import { Card, Form, Button } from "react-bootstrap"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faWindowMaximize } from "@fortawesome/free-regular-svg-icons"
 import { faHeadset, faServer } from "@fortawesome/free-solid-svg-icons"
+import ContactForm from "../components/contact"
+import DonateForm from "../components/donate"
 
 const IndexPage = () => (
   <Layout>
@@ -151,48 +153,26 @@ const IndexPage = () => (
               <h2 className="text-center">Contribute</h2>
               <p className="lead">
                 We are looking for talented developers looking to give back
-                their skills, preferably with the following experience: React,
-                HTML, CSS, NodeJs, Bootstrap, Gatsby. Reach out today to use
-                your coding skills to help bolster BIPOC organizations!
+                their skills. We welcome anyone with web development experience,
+                preferably with the following tools: React, HTML, CSS, NodeJs,
+                Bootstrap, Gatsby. Reach out today to use your coding skills to
+                help bolster BIPOC organizations!
               </p>
             </div>
-            <Form>
-              <Form.Group className="mr-4" controlId="formBasicEmail">
-                <Form.Label>Email address</Form.Label>
-                <Form.Control type="email" placeholder="Enter email" />
-                <Form.Text className="text-muted">
-                  We'll never share your email with anyone else.
-                </Form.Text>
-              </Form.Group>
-              <Form.Group className="mr-4" controlId="formBasicEmail">
-                <Form.Label>Github</Form.Label>
-                <Form.Control placeholder="Github username" />
-              </Form.Group>
-              <Form.Group>
-                <Form.File
-                  variant="primary"
-                  id="formBasicControlFile"
-                  label="Resume"
-                />
-              </Form.Group>
-              <button
-                style={{ color: "#ffffff" }}
-                className="btn mt-3 primary"
-                back
-                type="submit"
-              >
-                Submit
-              </button>
-            </Form>
+            <ContactForm></ContactForm>
           </div>
           <div className="col-md-6">
-            <h2 className="text-center">Donate</h2>
-            <p className="lead">
-              While our team is proud to support as many businesses as possible,
-              we can not do it alone. Donate to The InjusTech Project to support
-              the advancement of black-owned businesses. All proceeds go
-              directly to the cost of hosting the website.
-            </p>
+            <div className="mb-5">
+              <h2 className="text-center">Donate</h2>
+              <p className="lead">
+                We're working on registering as a 501(c)(3) non-profit in order
+                to accept official donations. In the mean time, feel free to
+                shoot our developers a venmo @jack-weiler if you want to
+                contribute directly to the hosting costs of our businesses.
+                Venmo and fill out the below form to receive receipts!
+              </p>
+            </div>
+            <DonateForm></DonateForm>
           </div>
         </div>
       </div>
