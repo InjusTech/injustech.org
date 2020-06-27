@@ -1,8 +1,7 @@
 import React from "react"
-import { Row, Col, Container } from "reactstrap"
+import { Row, Container } from "reactstrap"
 import Layout from "../components/layout"
 import "../styles/about.scss"
-import Image from "react-bootstrap/Image"
 import Carousel from "react-bootstrap/Carousel"
 
 const AboutPage = () => (
@@ -14,7 +13,7 @@ const AboutPage = () => (
             <h1 className="display-4">
               Redistributing Digital Entrepeneurship
             </h1>
-            <h3 className="lead" style={{ fontSize: "32px" }}>
+            <h3 className="lead mt-4" style={{ fontSize: "28px" }}>
               The InjusTech Project's mission is to restore balance to a
               landscape underrepresented by BIPOC creators. With growing
               national support for black-owned businesses, we believe no company
@@ -22,7 +21,11 @@ const AboutPage = () => (
             </h3>
           </div>
           <div className="col-md-5">
-            <img className="img-fluid" src={require("../images/blmlogo.png")} />
+            <img
+              alt="blm"
+              className="img-fluid"
+              src={require("../images/blmlogo.png")}
+            />
           </div>
         </div>
       </div>
@@ -47,7 +50,11 @@ const AboutPage = () => (
             </p>
           </div>
           <div className="col-md-6">
-            <img className="img-fluid" src={require("../images/chart.png")} />
+            <img
+              alt="chart"
+              className="img-fluid"
+              src={require("../images/chart.png")}
+            />
           </div>
         </div>
       </div>

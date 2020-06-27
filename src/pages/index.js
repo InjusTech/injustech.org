@@ -1,19 +1,20 @@
 import React from "react"
 import Layout from "../components/layout"
-import LandingIllustration from "../images/landing_illustration.svg"
-import { Card, Form, Button } from "react-bootstrap"
+import { Card } from "react-bootstrap"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faWindowMaximize } from "@fortawesome/free-regular-svg-icons"
 import { faHeadset, faServer } from "@fortawesome/free-solid-svg-icons"
 import ContactForm from "../components/contact"
 import DonateForm from "../components/donate"
+import MiniSignUpForm from "../components/mini-sign-up"
+import Collaboration from "../images/onlinecollaboration.svg"
 
 const IndexPage = () => (
   <Layout>
     <section className="has-section-divider">
       <div className="container">
         <div className="row justify-content-center align-items-center justify-content-between">
-          <div className="col-md-6 pr-xl-5">
+          <div className="col-md-6 pr-xl-5 mt-4">
             <h1 className="display-4 mb-3">
               Getting black-owned businesses online
             </h1>
@@ -24,22 +25,13 @@ const IndexPage = () => (
               email below and we will reach out to get to know your business
               needs!
             </p>
-            <form class="d-sm-flex mb-2 mt-4">
-              <input
-                type="email"
-                class="form-control form-control-lg mr-sm-2 mb-2 mb-sm-0"
-                placeholder="your-email@email.com"
-              />
-              <button class="btn-lg btn btn-primary text-nowrap" type="submit">
-                Sign Up
-              </button>
-            </form>
+            <MiniSignUpForm></MiniSignUpForm>
           </div>
           <div className="col-md-5">
             <img
               alt="hanging"
               className="img-fluid"
-              src={LandingIllustration}
+              src={require("../images/homewebsite.png")}
             />
           </div>
         </div>
@@ -79,7 +71,7 @@ const IndexPage = () => (
                   <FontAwesomeIcon
                     icon={faWindowMaximize}
                     size="4x"
-                    color="#84CEEB"
+                    color="#78C0E0"
                   />
                 </Card.Title>
                 <Card.Text>
@@ -99,7 +91,7 @@ const IndexPage = () => (
             <Card className="rounded">
               <Card.Body className="px-4 py-4">
                 <Card.Title className="mb-4">
-                  <FontAwesomeIcon icon={faHeadset} size="4x" color="#84CEEB" />
+                  <FontAwesomeIcon icon={faHeadset} size="4x" color="#78C0E0" />
                 </Card.Title>
                 <Card.Text>
                   <h3>Tech Support</h3>
@@ -118,7 +110,7 @@ const IndexPage = () => (
             <Card className="rounded">
               <Card.Body className="px-4 py-4">
                 <Card.Title className="mb-4">
-                  <FontAwesomeIcon icon={faServer} size="4x" color="#84CEEB" />
+                  <FontAwesomeIcon icon={faServer} size="4x" color="#78C0E0" />
                 </Card.Title>
                 <Card.Text>
                   <h3>Hosting</h3>
@@ -139,15 +131,11 @@ const IndexPage = () => (
     <section className="landing-section">
       <div className="container">
         <div className="row justify-content-center">
-          <div className="col-md-7">
-            <img
-              alt="collaborate"
-              className="img-fluid"
-              src={require("../images/collaborate.png")}
-            />
+          <div className="col-md-6 mb-5">
+            <img alt="collaborate" className="img-fluid" src={Collaboration} />
           </div>
         </div>
-        <div className="row mb-4">
+        <div id="contribute_anchor" className="row mb-4">
           <div className="col-md-6">
             <div className="mb-5">
               <h2 className="text-center">Contribute</h2>
