@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <div className="primary">
       <div className="container">
-        <div className="row justify-content-center">
+        <div className="row">
           <div className="col-md-3 mt-5 mb-5">
             <h5>Navigate</h5>
             <div>
