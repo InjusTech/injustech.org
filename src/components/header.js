@@ -21,13 +21,15 @@ const Header = () => (
       expand="lg"
     >
       <div className="container">
-        <Navbar.Brand href="/">
-          <Image
-            src={require("../images/logo.png")}
-            width="125"
-            height="40"
-            rounded
-          />
+        <Navbar.Brand>
+          <Link to={"/"}>
+            <Image
+              src={require("../images/logo.png")}
+              width="125"
+              height="40"
+              rounded
+            />
+          </Link>
         </Navbar.Brand>
         <Navbar.Toggle />
         <Navbar.Collapse>
