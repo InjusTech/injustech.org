@@ -11,7 +11,7 @@ import Collaboration from "../images/onlinecollaboration.svg"
 
 const IndexPage = () => (
   <Layout>
-    <section className="has-section-divider">
+    <section className="landing-section">
       <div className="container">
         <div className="row justify-content-center align-items-center justify-content-between">
           <div className="col-md-6 pr-xl-5 mt-4">
@@ -36,27 +36,15 @@ const IndexPage = () => (
           </div>
         </div>
       </div>
-      <div>
-        <svg
-          className="divider"
-          id="Layer_1"
-          data-name="Layer 1"
-          xmlns="http://www.w3.org/2000/svg"
-          height="96"
-          width="100%"
-          viewBox="0 0 1920 96"
-        >
-          <defs>
-            <style>{".cls-1{fill:#f1f6fd;}"}</style>
-          </defs>
-          <path
-            className="cls-1"
-            d="M1945.5,158.5H-37.5v-78a3353.9,3353.9,0,0,1,591-46c261.66,2.78,384,34.75,614,46,180.07,8.81,446,5.9,778-58"
-          />
-        </svg>
-      </div>
     </section>
-    <section className="landing-section alt-primary">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#f1f6fd"
+        fill-opacity="1"
+        d="M0,192L80,202.7C160,213,320,235,480,234.7C640,235,800,213,960,208C1120,203,1280,213,1360,218.7L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+      ></path>
+    </svg>
+    <section className="alt-primary" style={{ paddingBottom: "6rem" }}>
       <div className="container">
         <div className="row mb-4">
           <div className="col">

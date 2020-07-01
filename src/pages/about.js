@@ -9,7 +9,7 @@ const AboutPage = () => (
     <section className="has-section-divider">
       <div className="container">
         <div className="row justify-content-center align-items-center justify-content-between">
-          <div className="col-md-6 pr-xl-5">
+          <div className="col-md-6">
             <h1 className="display-4">
               Redistributing Digital Entrepeneurship
             </h1>
@@ -61,8 +61,8 @@ const AboutPage = () => (
     </section>
     <section>
       <div className="container">
-        <div className="row justify-content-center align-items-center justify-content-between">
-          <div className="mt-5">
+        <div className="row">
+          <div className="col-md-12 mt-5">
             <h2 className="mb-3">Who We Are</h2>
             <p className="lead">
               Our team brings years of website and app development experience.
